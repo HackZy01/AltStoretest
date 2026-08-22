@@ -124,14 +124,20 @@ jobs:
         id: find_project
         run: |
           set -e
+          echo "DEBUG: Contents of current directory:"
+          ls -la
+          echo ""
+          echo "DEBUG: Looking for .xcworkspace files..."
           if ls *.xcworkspace 1> /dev/null 2>&1; then
             WORKSPACE=$(ls *.xcworkspace | head -n1)
             echo "workspace=$WORKSPACE" >> $GITHUB_OUTPUT
             echo "Found workspace: $WORKSPACE"
+            echo "DEBUG: Set output workspace=$WORKSPACE"
           elif ls *.xcodeproj 1> /dev/null 2>&1; then
             PROJECT=$(ls *.xcodeproj | head -n1)
             echo "project=$PROJECT" >> $GITHUB_OUTPUT
             echo "Found project: $PROJECT"
+            echo "DEBUG: Set output project=$PROJECT"
           else
             echo "No .xcworkspace or .xcodeproj found in the repository root." >&2
             exit 1
@@ -143,10 +149,16 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build
-
+      
+          echo "DEBUG: steps.find_project.outputs.workspace = ${{ steps.find_project.outputs.workspace }}"
+          echo "DEBUG: steps.find_project.outputs.project = ${{ steps.find_project.outputs.project }}"
+      
           WORKSPACE="${{ steps.find_project.outputs.workspace }}"
           PROJECT="${{ steps.find_project.outputs.project }}"
-
+          
+          echo "DEBUG: WORKSPACE variable = $WORKSPACE"
+          echo "DEBUG: PROJECT variable = $PROJECT"
+      
           if [ -n "$WORKSPACE" ]; then
             echo "Using workspace: $WORKSPACE"
             xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath "$PWD/build/Archive.xcarchive" clean archive DEVELOPMENT_TEAM="${DEVELOPMENT_TEAM}"
