@@ -79,10 +79,6 @@ jobs:
 
           rm -f "$CERT_PATH"
 
-      # There is no such action as apple-actions/import-provisioning-profile —
-      # it doesn't exist in the Apple-Actions org and GitHub Actions will fail
-      # this step with "action not found". Installing the profile is just two
-      # shell commands, matching GitHub's own documented approach.
       - name: Install provisioning profile
         env:
           PROV_PROFILE_BASE64: ${{ secrets.PROV_PROFILE_BASE64 }}
@@ -147,24 +143,26 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build
-      
+
           WORKSPACE="${{ steps.find_project.outputs.workspace }}"
           PROJECT="${{ steps.find_project.outputs.project }}"
-      
+
           if [ -n "$WORKSPACE" ]; then
             echo "Using workspace: $WORKSPACE"
-            xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+            xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath "$PWD/build/Archive.xcarchive" clean archive DEVELOPMENT_TEAM="${DEVELOPMENT_TEAM}"
           elif [ -n "$PROJECT" ]; then
             echo "Using project: $PROJECT"
-            xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+            xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath "$PWD/build/Archive.xcarchive" clean archive DEVELOPMENT_TEAM="${DEVELOPMENT_TEAM}"
           else
-            echo "Error: No workspace or project output](#)*
+            echo "Error: No workspace or project found" >&2
+            exit 1
+          fi
 
       - name: Export IPA
         run: |
           set -e
           mkdir -p build/ipa
-          xcodebuild -exportArchive -archivePath $PWD/build/Archive.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $PWD/build/ipa || ( echo "Export failed, printing logs" && ls -R build || true; exit 1 )
+          xcodebuild -exportArchive -archivePath "$PWD/build/Archive.xcarchive" -exportOptionsPlist ExportOptions.plist -exportPath "$PWD/build/ipa"
 
       - name: List generated artifacts
         run: ls -la build || true
