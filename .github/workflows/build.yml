@@ -129,9 +129,13 @@ jobs:
         run: |
           set -e
           if ls *.xcworkspace 1> /dev/null 2>&1; then
-            echo "workspace=$(ls *.xcworkspace | head -n1)" >> $GITHUB_OUTPUT
+            WORKSPACE=$(ls *.xcworkspace | head -n1)
+            echo "workspace=$WORKSPACE" >> $GITHUB_OUTPUT
+            echo "Found workspace: $WORKSPACE"
           elif ls *.xcodeproj 1> /dev/null 2>&1; then
-            echo "project=$(ls *.xcodeproj | head -n1)" >> $GITHUB_OUTPUT
+            PROJECT=$(ls *.xcodeproj | head -n1)
+            echo "project=$PROJECT" >> $GITHUB_OUTPUT
+            echo "Found project: $PROJECT"
           else
             echo "No .xcworkspace or .xcodeproj found in the repository root." >&2
             exit 1
