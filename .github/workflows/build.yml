@@ -1,18 +1,162 @@
-- name: Build and archive
-  env:
-    DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
-  run: |
-    set -euo pipefail
-    mkdir -p build
+name: Build IPA
 
-    if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
-      WORKSPACE="${{ steps.find_project.outputs.workspace }}"
-      echo "Using workspace: $WORKSPACE"
-      # Debug: verify the workspace structure
-      ls -la "$WORKSPACE" || true
-      xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-    else
-      PROJECT="${{ steps.find_project.outputs.project }}"
-      echo "Using project: $PROJECT"
-      xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-    fi
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      scheme:
+        description: 'Xcode scheme to build'
+        required: false
+        default: 'AltStore'
+      export_method:
+        description: 'Export method for Xcode export (app-store, ad-hoc, enterprise, development)'
+        required: false
+        default: 'ad-hoc'
+
+env:
+  SCHEME: ${{ github.event.inputs.scheme || 'AltStore' }}
+  EXPORT_METHOD: ${{ github.event.inputs.export_method || 'ad-hoc' }}
+
+jobs:
+  build:
+    name: Build and export IPA
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby (for CocoaPods / Fastlane if needed)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Create temporary keychain and import certificate (P12, supports empty password)
+        if: ${{ secrets.P12_BASE64 }}
+        env:
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          set -euo pipefail
+
+          # decode p12
+          echo "${{ secrets.P12_BASE64 }}" | base64 --decode > /tmp/cert.p12
+
+          # create a temporary keychain
+          KEYCHAIN_NAME=build.keychain
+          KEYCHAIN_PATH="$HOME/Library/Keychains/${KEYCHAIN_NAME}-db"
+          security create-keychain -p "${KEYCHAIN_PASSWORD}" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 7200 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "${KEYCHAIN_PASSWORD}" "$KEYCHAIN_PATH"
+
+          # add temporary keychain to the list so codesign/xcodebuild can see it
+          EXISTING=$(security list-keychains | sed -n 's/^"//;s/"$//;p' | xargs)
+          security list-keychains -s "$KEYCHAIN_PATH" $EXISTING
+
+          # import the p12; allow empty P12 password
+          if [ -z "${{ secrets.P12_PASSWORD }}" ]; then
+            security import /tmp/cert.p12 -k "$KEYCHAIN_PATH" -A
+          else
+            security import /tmp/cert.p12 -k "$KEYCHAIN_PATH" -P "${{ secrets.P12_PASSWORD }}" -A
+          fi
+
+          # give codesign and xcodebuild access to the private key
+          security set-key-partition-list -S apple-tool:,apple: -s -k "${KEYCHAIN_PASSWORD}" "$KEYCHAIN_PATH"
+
+      - name: Import provisioning profile
+        if: ${{ secrets.PROV_PROFILE_BASE64 }}
+        uses: apple-actions/import-provisioning-profile@v1
+        with:
+          provisioning-profile-base64: ${{ secrets.PROV_PROFILE_BASE64 }}
+
+      - name: Install CocoaPods (if Podfile exists)
+        run: |
+          if [ -f Podfile ]; then
+            gem install cocoapods -v '>=1.11' --no-document || true
+            pod install --repo-update
+          fi
+
+      - name: Create ExportOptions.plist
+        run: |
+          cat > ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>${{ env.EXPORT_METHOD }}</string>
+            <key>compileBitcode</key>
+            <false/>
+            <key>uploadSymbols</key>
+            <true/>
+          </dict>
+          </plist>
+          EOF
+
+      - name: Determine Xcode project or workspace
+        id: find_project
+        run: |
+          set -e
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            echo "workspace=$(ls *.xcworkspace | head -n1)" >> $GITHUB_OUTPUT
+          elif ls *.xcodeproj 1> /dev/null 2>&1; then
+            echo "project=$(ls *.xcodeproj | head -n1)" >> $GITHUB_OUTPUT
+          else
+            echo "No .xcworkspace or .xcodeproj found in the repository root." >&2
+            exit 1
+          fi
+
+      - name: Build and archive
+        env:
+          DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
+        run: |
+          set -euo pipefail
+          mkdir -p build
+
+          if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
+            WORKSPACE=${{ steps.find_project.outputs.workspace }}
+            echo "Using workspace: $WORKSPACE"
+            xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+          else
+            PROJECT=${{ steps.find_project.outputs.project }}
+            echo "Using project: $PROJECT"
+            xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+          fi
+
+      - name: Export IPA
+        run: |
+          set -e
+          mkdir -p build/ipa
+          xcodebuild -exportArchive -archivePath $PWD/build/Archive.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $PWD/build/ipa || ( echo "Export failed, printing logs" && ls -R build || true; exit 1 )
+
+      - name: List generated artifacts
+        run: ls -la build || true
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: AltStore-ipa
+          path: build/ipa/*.ipa
+
+      - name: Delete temporary keychain
+        if: ${{ always() }}
+        env:
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          set -euo pipefail
+          KEYCHAIN_PATH="$HOME/Library/Keychains/build.keychain-db"
+          if [ -f "$KEYCHAIN_PATH" ]; then
+            # attempt to delete; ignore errors to avoid failing final workflow cleanup
+            security delete-keychain "$KEYCHAIN_PATH" || true
+          fi
+
+      - name: Show helpful note
+        run: |
+          echo "Build finished. The IPA artifact was uploaded."
+          echo "Required secrets (set these in the repository settings -> Secrets):"
+          echo " - P12_BASE64: base64-encoded signing certificate (.p12)"
+          echo " - P12_PASSWORD: password for the .p12 file (leave empty if the .p12 has no password)"
+          echo " - KEYCHAIN_PASSWORD: password for the temporary keychain (any strong string)"
+          echo " - PROV_PROFILE_BASE64: base64-encoded provisioning profile (.mobileprovision)"
+          echo " - DEVELOPMENT_TEAM: your Apple Team ID (e.g., ABCDE12345)"
+          echo "Optional: set workflow_dispatch inputs 'scheme' and 'export_method' when triggering manually."
