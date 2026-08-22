@@ -158,9 +158,8 @@ jobs:
             echo "Using project: $PROJECT"
             xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
           else
-            echo "No workspace or project found" >&2
-            exit 1
-          fi
+            echo "Error: No workspace or project output](#)*
+      
 
       - name: Export IPA
         run: |
