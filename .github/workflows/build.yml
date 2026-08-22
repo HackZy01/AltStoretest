@@ -144,16 +144,18 @@ jobs:
           set -euo pipefail
           mkdir -p build
       
-          if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
-            WORKSPACE="${{ steps.find_project.outputs.workspace }}"
+          WORKSPACE="${{ steps.find_project.outputs.workspace }}"
+          PROJECT="${{ steps.find_project.outputs.project }}"
+      
+          if [ -n "$WORKSPACE" ]; then
             echo "Using workspace: $WORKSPACE"
-            # Debug: verify the workspace structure
-            ls -la "$WORKSPACE" || true
             xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-          else
-            PROJECT="${{ steps.find_project.outputs.project }}"
+          elif [ -n "$PROJECT" ]; then
             echo "Using project: $PROJECT"
             xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+          else
+            echo "No workspace or project found" >&2
+            exit 1
           fi
 
       - name: Export IPA
