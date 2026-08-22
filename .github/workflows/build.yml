@@ -138,23 +138,23 @@ jobs:
           fi
 
       - name: Build and archive
-  env:
-    DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
-  run: |
-    set -euo pipefail
-    mkdir -p build
-
-    if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
-      WORKSPACE="${{ steps.find_project.outputs.workspace }}"
-      echo "Using workspace: $WORKSPACE"
-      # Debug: verify the workspace structure
-      ls -la "$WORKSPACE" || true
-      xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-    else
-      PROJECT="${{ steps.find_project.outputs.project }}"
-      echo "Using project: $PROJECT"
-      xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-    fi
+        env:
+          DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
+        run: |
+          set -euo pipefail
+          mkdir -p build
+      
+          if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
+            WORKSPACE="${{ steps.find_project.outputs.workspace }}"
+            echo "Using workspace: $WORKSPACE"
+            # Debug: verify the workspace structure
+            ls -la "$WORKSPACE" || true
+            xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+          else
+            PROJECT="${{ steps.find_project.outputs.project }}"
+            echo "Using project: $PROJECT"
+            xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+          fi
 
       - name: Export IPA
         run: |
