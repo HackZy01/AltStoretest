@@ -2,7 +2,7 @@ name: Build IPA
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ marketplace ]
   workflow_dispatch:
     inputs:
       scheme:
@@ -33,14 +33,25 @@ jobs:
           ruby-version: '3.1'
 
       - name: Create temporary keychain and import certificate (P12, supports empty password)
-        if: ${{ secrets.P12_BASE64 }}
         env:
+          P12_BASE64: ${{ secrets.P12_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
           set -euo pipefail
 
-          # decode p12
-          echo "${{ secrets.P12_BASE64 }}" | base64 --decode > /tmp/cert.p12
+          if [ -z "${P12_BASE64:-}" ]; then
+            echo "P12_BASE64 secret is not set, skipping certificate import."
+            exit 0
+          fi
+
+          if [ -z "${KEYCHAIN_PASSWORD:-}" ]; then
+            echo "KEYCHAIN_PASSWORD secret must be set when P12_BASE64 is provided." >&2
+            exit 1
+          fi
+
+          CERT_PATH="$RUNNER_TEMP/cert.p12"
+          echo "$P12_BASE64" | base64 --decode > "$CERT_PATH"
 
           # create a temporary keychain
           KEYCHAIN_NAME=build.keychain
@@ -50,24 +61,44 @@ jobs:
           security unlock-keychain -p "${KEYCHAIN_PASSWORD}" "$KEYCHAIN_PATH"
 
           # add temporary keychain to the list so codesign/xcodebuild can see it
-          EXISTING=$(security list-keychains | sed -n 's/^"//;s/"$//;p' | xargs)
+          EXISTING=$(security list-keychains | sed -n 's/^ *"//;s/"$//p' | xargs)
           security list-keychains -s "$KEYCHAIN_PATH" $EXISTING
 
+          # make it the default so xcodebuild can find the identity without extra flags
+          security default-keychain -s "$KEYCHAIN_PATH"
+
           # import the p12; allow empty P12 password
-          if [ -z "${{ secrets.P12_PASSWORD }}" ]; then
-            security import /tmp/cert.p12 -k "$KEYCHAIN_PATH" -A
+          if [ -z "${P12_PASSWORD:-}" ]; then
+            security import "$CERT_PATH" -k "$KEYCHAIN_PATH" -A
           else
-            security import /tmp/cert.p12 -k "$KEYCHAIN_PATH" -P "${{ secrets.P12_PASSWORD }}" -A
+            security import "$CERT_PATH" -k "$KEYCHAIN_PATH" -P "${P12_PASSWORD}" -A
           fi
 
           # give codesign and xcodebuild access to the private key
           security set-key-partition-list -S apple-tool:,apple: -s -k "${KEYCHAIN_PASSWORD}" "$KEYCHAIN_PATH"
 
-      - name: Import provisioning profile
-        if: ${{ secrets.PROV_PROFILE_BASE64 }}
-        uses: apple-actions/import-provisioning-profile@v1
-        with:
-          provisioning-profile-base64: ${{ secrets.PROV_PROFILE_BASE64 }}
+          rm -f "$CERT_PATH"
+
+      # There is no such action as apple-actions/import-provisioning-profile —
+      # it doesn't exist in the Apple-Actions org and GitHub Actions will fail
+      # this step with "action not found". Installing the profile is just two
+      # shell commands, matching GitHub's own documented approach.
+      - name: Install provisioning profile
+        env:
+          PROV_PROFILE_BASE64: ${{ secrets.PROV_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${PROV_PROFILE_BASE64:-}" ]; then
+            echo "PROV_PROFILE_BASE64 secret is not set, skipping profile install."
+            exit 0
+          fi
+
+          PP_PATH="$RUNNER_TEMP/build_pp.mobileprovision"
+          echo "$PROV_PROFILE_BASE64" | base64 --decode > "$PP_PATH"
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/
+          rm -f "$PP_PATH"
 
       - name: Install CocoaPods (if Podfile exists)
         run: |
@@ -107,21 +138,23 @@ jobs:
           fi
 
       - name: Build and archive
-        env:
-          DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
-        run: |
-          set -euo pipefail
-          mkdir -p build
+  env:
+    DEVELOPMENT_TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
+  run: |
+    set -euo pipefail
+    mkdir -p build
 
-          if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
-            WORKSPACE=${{ steps.find_project.outputs.workspace }}
-            echo "Using workspace: $WORKSPACE"
-            xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-          else
-            PROJECT=${{ steps.find_project.outputs.project }}
-            echo "Using project: $PROJECT"
-            xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
-          fi
+    if [ -n "${{ steps.find_project.outputs.workspace }}" ]; then
+      WORKSPACE="${{ steps.find_project.outputs.workspace }}"
+      echo "Using workspace: $WORKSPACE"
+      # Debug: verify the workspace structure
+      ls -la "$WORKSPACE" || true
+      xcodebuild -workspace "$WORKSPACE" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+    else
+      PROJECT="${{ steps.find_project.outputs.project }}"
+      echo "Using project: $PROJECT"
+      xcodebuild -project "$PROJECT" -scheme "${{ env.SCHEME }}" -configuration Release -archivePath $PWD/build/Archive.xcarchive clean archive DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM}
+    fi
 
       - name: Export IPA
         run: |
@@ -133,15 +166,13 @@ jobs:
         run: ls -la build || true
 
       - name: Upload IPA artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: AltStore-ipa
           path: build/ipa/*.ipa
 
       - name: Delete temporary keychain
         if: ${{ always() }}
-        env:
-          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
           set -euo pipefail
           KEYCHAIN_PATH="$HOME/Library/Keychains/build.keychain-db"
