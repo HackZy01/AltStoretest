@@ -1,198 +1,246 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "9aU-eh-iwq.configuration.title" : {
-      "comment" : "Class = \"UIButton\"; configuration.title = \"Discover more sources on explore.alt.store\"; ObjectID = \"9aU-eh-iwq\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Discover more sources on explore.alt.store"
+  "sourceLanguage": "en",
+  "strings": {
+    "9aU-eh-iwq.configuration.title": {
+      "comment": "Class = \"UIButton\"; configuration.title = \"Discover more sources on explore.alt.store\"; ObjectID = \"9aU-eh-iwq\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Discover more sources on explore.alt.store"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "altstore.ioでさらに多くのアプリを見つけましょう"
+        "ja": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "altstore.ioでさらに多くのアプリを見つけましょう"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descubra mais fontes em explore.alt.store"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odkryj więcej źródeł na explore.alt.store"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descubra mais fontes em explore.alt.store"
           }
         }
       }
     },
-    "9aU-eh-iwq.normalTitle" : {
-      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"9aU-eh-iwq\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Button"
+    "9aU-eh-iwq.normalTitle": {
+      "comment": "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"9aU-eh-iwq\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Button"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ボタン"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ボタン"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Botão"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przycisk"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Botão"
           }
         }
       }
     },
-    "FGB-cd-Vkd.title" : {
-      "comment" : "Class = \"UINavigationItem\"; title = \"All News\"; ObjectID = \"FGB-cd-Vkd\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "All News"
+    "FGB-cd-Vkd.title": {
+      "comment": "Class = \"UINavigationItem\"; title = \"All News\"; ObjectID = \"FGB-cd-Vkd\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "All News"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "すべてのニュース"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのニュース"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todas as novidades"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystkie aktualności"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as novidades"
           }
         }
       }
     },
-    "Noh-fc-wch.title" : {
-      "comment" : "Class = \"UINavigationItem\"; title = \"Sources\"; ObjectID = \"Noh-fc-wch\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sources"
+    "Noh-fc-wch.title": {
+      "comment": "Class = \"UINavigationItem\"; title = \"Sources\"; ObjectID = \"Noh-fc-wch\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Sources"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソース"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソース"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fontes"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Źródła"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fontes"
           }
         }
       }
     },
-    "rUb-ON-AON.title" : {
-      "comment" : "Class = \"UINavigationItem\"; title = \"All Apps\"; ObjectID = \"rUb-ON-AON\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "All Apps"
+    "Wm7-1O-FkD.title": {
+      "comment": "Class = \"UICollectionViewController\"; title = \"Sources\"; ObjectID = \"Wm7-1O-FkD\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Sources"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "すべてのアプリ"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソース"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todos os Apps"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Źródła"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fontes"
           }
         }
       }
     },
-    "v46-dC-g7e.title" : {
-      "comment" : "Class = \"UINavigationItem\"; title = \"Add Source\"; ObjectID = \"v46-dC-g7e\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Add Source"
+    "rUb-ON-AON.title": {
+      "comment": "Class = \"UINavigationItem\"; title = \"All Apps\"; ObjectID = \"rUb-ON-AON\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "All Apps"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソースを追加"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのアプリ"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adicionar fonte"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystkie aplikacje"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos os Apps"
           }
         }
       }
     },
-    "Wm7-1O-FkD.title" : {
-      "comment" : "Class = \"UICollectionViewController\"; title = \"Sources\"; ObjectID = \"Wm7-1O-FkD\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sources"
+    "v46-dC-g7e.title": {
+      "comment": "Class = \"UINavigationItem\"; title = \"Add Source\"; ObjectID = \"v46-dC-g7e\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Add Source"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソース"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソースを追加"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fontes"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj źródło"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar fonte"
           }
         }
       }
     },
-    "xPv-dc-X4v.title" : {
-      "comment" : "Class = \"UITabBarItem\"; title = \"Sources\"; ObjectID = \"xPv-dc-X4v\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sources"
+    "xPv-dc-X4v.title": {
+      "comment": "Class = \"UITabBarItem\"; title = \"Sources\"; ObjectID = \"xPv-dc-X4v\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Sources"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソース"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソース"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fontes"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Źródła"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fontes"
           }
         }
       }
     }
   },
-  "version" : "1.1"
+  "version": "1.1"
 }
