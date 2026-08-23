@@ -1,1604 +1,1963 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@ %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ %2$@"
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ %2$@"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ %2$@"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ %2$@"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ %2$@"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ %2$@"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ %2$@"
+          }
         }
       }
     },
-    "%@ does not have any app versions." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@にはアプリバージョンがありません。"
+    "%@ does not have any app versions.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@にはアプリバージョンがありません。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ nie posiada żadnych wersji."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ não tem nenhuma versão de app."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ não tem nenhuma versão de app."
           }
         }
       }
     },
-    "%@ error %@." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ error %2$@."
+    "%@ error %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ error %2$@."
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@エラー%2$@。"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@エラー%2$@。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ erro %2$@."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ erro %2$@."
           }
         }
       }
     },
-    "%@ is currently locked." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@は現在ロックされています。"
+    "%@ is currently locked.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@は現在ロックされています。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ está bloqueado no momento."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ está bloqueado no momento."
           }
         }
       }
     },
-    "%@ is not currently running on %@." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ is not currently running on %2$@."
+    "%@ is not currently running on %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ is not currently running on %2$@."
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@は現在%2$@で実行されていません。"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@は現在%2$@で実行されていません。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ não está em execução no momento em %2$@."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ não está em execução no momento em %2$@."
           }
         }
       }
     },
-    "%@ received an invalid request from AltServer." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@はAltServerから無効なリクエストを受け取りました。"
+    "%@ received an invalid request from AltServer.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@はAltServerから無効なリクエストを受け取りました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ recebeu uma solicitação inválida do AltServer."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ recebeu uma solicitação inválida do AltServer."
           }
         }
       }
     },
-    "%@ requires %@ or later." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ requires %2$@ or later."
+    "%@ requires %@ or later.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ requires %2$@ or later."
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@は%2$@以降を必要とします。"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@は%2$@以降を必要とします。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ requer a versão %2$@ ou posterior."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ requer a versão %2$@ ou posterior."
           }
         }
       }
     },
-    "Activate %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のアクティベートに失敗しました"
+    "Activate %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のアクティベートに失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha ao ativar %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao ativar %@"
           }
         }
       }
     },
-    "AltServer could not connect to Mail plug-in." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerはメールアプリのプラグインに接続できませんでした。"
+    "AltServer could not connect to Mail plug-in.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerはメールアプリのプラグインに接続できませんでした。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie mógł nawiązać połączenia z wtyczką programu Mail."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não conseguiu se conectar ao plug-in do Mail."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não conseguiu se conectar ao plug-in do Mail."
           }
         }
       }
     },
-    "AltServer could not establish a connection to AltStore." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerはAltStoreへの接続を確立できませんでした。"
+    "AltServer could not establish a connection to AltStore.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerはAltStoreへの接続を確立できませんでした。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie mógł nawiązać połączenia z AltStore.   "
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não conseguiu estabelecer uma conexão com o AltStore."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não conseguiu estabelecer uma conexão com o AltStore."
           }
         }
       }
     },
-    "AltServer could not establish a secure connection to %@." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerは%@への安全な接続を確立できませんでした。"
+    "AltServer could not establish a secure connection to %@.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerは%@への安全な接続を確立できませんでした。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie mógł nawiązać bezpiecznego połączenia z %@.\n"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não conseguiu estabelecer uma conexão segura com %@."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não conseguiu estabelecer uma conexão segura com %@."
           }
         }
       }
     },
-    "AltServer could not find this device." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerはこのデバイスを見つけられませんでした。"
+    "AltServer could not find this device.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerはこのデバイスを見つけられませんでした。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie mógł znaleźć tego urządzenia."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não conseguiu encontrar este dispositivo."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não conseguiu encontrar este dispositivo."
           }
         }
       }
     },
-    "AltServer could not write data to this device." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerはこのデバイスにデータを書き込めませんでした。"
+    "AltServer could not write data to this device.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerはこのデバイスにデータを書き込めませんでした。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie mógł zapisać danych na tym urządzeniu."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não conseguiu gravar dados neste dispositivo."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não conseguiu gravar dados neste dispositivo."
           }
         }
       }
     },
-    "AltServer does not support this request." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerはこのリクエストをサポートしていません"
+    "AltServer does not support this request.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerはこのリクエストをサポートしていません"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer nie obsługuje tego żądania."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer não oferece suporte a esta solicitação."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer não oferece suporte a esta solicitação."
           }
         }
       }
     },
-    "AltServer received an invalid request." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerは無効なリクエストを受け取りました。"
+    "AltServer received an invalid request.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerは無効なリクエストを受け取りました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer otrzymał nieprawidłowe żądanie."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer recebeu uma solicitação inválida."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer recebeu uma solicitação inválida."
           }
         }
       }
     },
-    "AltServer received an invalid response from %@." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerは%@から無効な応答を受け取りました。"
+    "AltServer received an invalid response from %@.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerは%@から無効な応答を受け取りました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer recebeu uma resposta inválida de %@."
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer otrzymał nieprawidłową odpowiedź od %@."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer recebeu uma resposta inválida de %@."
+          }
         }
       }
     },
-    "AltServer sent an invalid response." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerが無効な応答を送信しました。"
+    "AltServer sent an invalid response.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerが無効な応答を送信しました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServer wysłał nieprawidłową odpowiedź."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltServer enviou uma resposta inválida."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltServer enviou uma resposta inválida."
           }
         }
       }
     },
-    "AltServer's connection to %@ timed out." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerの%@への接続がタイムアウトしました。"
+    "AltServer's connection to %@ timed out.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerの%@への接続がタイムアウトしました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A conexão do AltServer com %@ excedeu o tempo limite."
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upłynął limit czasu połączenia AltServer z %@."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A conexão do AltServer com %@ excedeu o tempo limite."
+          }
         }
       }
     },
-    "AltStore received an unknown response from AltServer." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltStoreはAltServerから不明な応答を受け取りました。"
+    "AltStore received an unknown response from AltServer.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltStoreはAltServerから不明な応答を受け取りました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltStore otrzymał nieznaną odpowiedź od AltServer."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O AltStore recebeu uma resposta desconhecida do AltServer."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AltStore recebeu uma resposta desconhecida do AltServer."
           }
         }
       }
     },
-    "AltStore's database could not be saved." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltStoreのデータベースを保存できませんでした。"
+    "AltStore's database could not be saved.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltStoreのデータベースを保存できませんでした。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Não foi possível salvar o banco de dados do AltStore."
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zapisać bazy danych AltStore."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível salvar o banco de dados do AltStore."
+          }
         }
       }
     },
-    "An error occured while removing the app." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アプリの削除中にエラーが発生しました。"
+    "An error occured while removing the app.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリの削除中にエラーが発生しました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wystąpił błąd podczas usuwania aplikacji."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um erro ao remover o app."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um erro ao remover o app."
           }
         }
       }
     },
-    "An error occurred while installing the app." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アプリのインストール中にエラーが発生しました。"
+    "An error occurred while installing the app.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリのインストール中にエラーが発生しました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um erro durante a instalação do app."
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wystąpił błąd podczas instalowania aplikacji."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um erro durante a instalação do app."
+          }
         }
       }
     },
-    "An unknown error occured." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不明なエラーが発生しました。"
+    "An unknown error occured.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不明なエラーが発生しました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wystąpił nieznany błąd."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um erro desconhecido."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um erro desconhecido."
           }
         }
       }
     },
-    "An unknown error occurred." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不明なエラーが発生しました。"
+    "An unknown error occurred.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不明なエラーが発生しました。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wystąpił nieznany błąd."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um erro desconhecido."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um erro desconhecido."
           }
         }
       }
     },
-    "At least one app" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "少なくとも1つのアプリ"
+    "At least one app": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少なくとも1つのアプリ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przynajmniej jedna aplikacja"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pelo menos um app"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pelo menos um app"
           }
         }
       }
     },
-    "Backup %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のバックアップに失敗しました"
+    "Backup %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のバックアップに失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Não foi possível fazer backup de %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível fazer backup de %@"
           }
         }
       }
     },
-    "CarPlay" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CarPlay"
+    "CarPlay": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CarPlay"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CarPlay"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CarPlay"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CarPlay"
           }
         }
       }
     },
-    "Connection error code: %@" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "接続エラーコード：%@"
+    "Connection error code: %@": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続エラーコード：%@"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Código de erro de conexão: %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código de erro de conexão: %@"
           }
         }
       }
     },
-    "Could not find profile" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プロファイルが見つかりませんでした"
+    "Could not find profile": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プロファイルが見つかりませんでした"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się odnaleźć profilu"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Não foi possível encontrar o perfil"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível encontrar o perfil"
           }
         }
       }
     },
-    "Deactivate %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@の無効化に失敗しました"
+    "Deactivate %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の無効化に失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha ao desativar %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao desativar %@"
           }
         }
       }
     },
-    "Debug" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバッグ"
+    "Debug": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバッグ"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Depurar"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depurar"
           }
         }
       }
     },
-    "Debug Description" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバッグの詳細"
+    "Debug Description": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバッグの詳細"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descrição de depuração"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descrição de depuração"
           }
         }
       }
     },
-    "Default" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デフォルト"
+    "Default": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デフォルト"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domyślna"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Padrão"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padrão"
           }
         }
       }
     },
-    "Developer" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "開発者"
+    "Developer": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dla deweloperów"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desenvolvedor"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desenvolvedor"
           }
         }
       }
     },
-    "Enable JIT for %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@に対するJITの有効化に失敗しました"
+    "DeveloperSort": {
+      "comment": "Sorting criteria",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Developer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "alha ao ativar o JIT para %@"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dewelopera"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desenvolvedor"
+          }
         }
       }
     },
-    "Entertainment" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エンターテインメント"
+    "Enable JIT for %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@に対するJITの有効化に失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entretenimento"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "alha ao ativar o JIT para %@"
           }
         }
       }
     },
-    "Entitlement" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エンタイトルメント"
+    "Entertainment": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エンターテインメント"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozrywka"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissão"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entretenimento"
           }
         }
       }
     },
-    "Error" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エラー"
+    "Entitlement": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エンタイトルメント"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erro"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uprawnienie systemu"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissão"
+          }
         }
       }
     },
-    "Error code: %@" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エラーコード：%@"
+    "Error": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エラー"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Błąd"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Código de erro: %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erro"
           }
         }
       }
     },
-    "Error Description" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エラーの詳細"
+    "Error Description": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エラーの詳細"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descrição do erro"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opis błędu"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descrição do erro"
+          }
         }
       }
     },
-    "Failure" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "失敗"
+    "Error code: %@": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エラーコード：%@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kod błędu: %@"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código de erro: %@"
           }
         }
       }
     },
-    "Failure Reason" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "失敗の原因"
+    "Failure": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Motivo da falha"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niepowodzenie"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha"
+          }
         }
       }
     },
-    "Fault" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "障害"
+    "Failure Reason": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "失敗の原因"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motivo da falha"
           }
         }
       }
     },
-    "Free Developer Account" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無料開発者アカウント"
+    "Fault": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "障害"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conta gratuita de desenvolvedor"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha"
           }
         }
       }
     },
-    "Games" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ゲーム"
+    "Free Developer Account": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無料開発者アカウント"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darmowe konto dewelopera"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jogos"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conta gratuita de desenvolvedor"
           }
         }
       }
     },
-    "Info" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "情報"
+    "Games": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ゲーム"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gry"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Informações"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jogos"
           }
         }
       }
     },
-    "Install %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のインストールに失敗しました"
+    "Info": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "情報"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha na instalação de %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informações"
           }
         }
       }
     },
-    "Invalid access token." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無効なアクセストークンです。"
+    "Install %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のインストールに失敗しました"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instalacja %@ nie powiodła się"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Token de acesso inválido."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha na instalação de %@"
           }
         }
       }
     },
-    "Last Updated" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最終更新日"
+    "Invalid access token.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無効なアクセストークンです。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieprawidłowy token dostępu."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Última atualização"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token de acesso inválido."
           }
         }
       }
     },
-    "Lifestyle" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ライフスタイル"
+    "Last Updated": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最終更新日"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatnie uaktualnienie"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estilo de vida"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última atualização"
           }
         }
       }
     },
-    "Make sure Mail is running and the plug-in is enabled in Mail's preferences." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "メールアプリが実行されていること、およびメールアプリの環境設定でプラグインが有効になっていることを確認してください。"
+    "Lifestyle": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ライフスタイル"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Styl życia"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Certifique-se de que o Mail esteja em execução e que o plug-in esteja habilitado nas preferências do Mail."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo de vida"
           }
         }
       }
     },
-    "Make sure the app is running in the foreground on %@ then try again." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@上でアプリがフォアグラウンドで実行されていることを確認してから、もう一度お試しください。"
+    "Make sure Mail is running and the plug-in is enabled in Mail's preferences.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メールアプリが実行されていること、およびメールアプリの環境設定でプラグインが有効になっていることを確認してください。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Certifique-se de que o app esteja em execução em primeiro plano em %@ e tente novamente."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Certifique-se de que o Mail esteja em execução e que o plug-in esteja habilitado nas preferências do Mail."
           }
         }
       }
     },
-    "Make sure you have trusted this device with your computer and Wi-Fi sync is enabled." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このデバイスがコンピュータで信頼済みであることを確認し、Wi-Fi同期が有効になっていることを確認してください。"
+    "Make sure the app is running in the foreground on %@ then try again.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@上でアプリがフォアグラウンドで実行されていることを確認してから、もう一度お試しください。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Certifique-se de que este dispositivo esteja marcado como confiável no computador e que a sincronização por Wi-Fi esteja ativada."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Certifique-se de que o app esteja em execução em primeiro plano em %@ e tente novamente."
           }
         }
       }
     },
-    "Name" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "名前"
+    "Make sure you have trusted this device with your computer and Wi-Fi sync is enabled.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスがコンピュータで信頼済みであることを確認し、Wi-Fi同期が有効になっていることを確認してください。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upewnij się, że zostało naciśnięte zaufaj dla tego komputera i "
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nome"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Certifique-se de que este dispositivo esteja marcado como confiável no computador e que a sincronização por Wi-Fi esteja ativada."
           }
         }
       }
     },
-    "No connected Patreon account." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "接続されているPatreonアカウントはありません。"
+    "Name": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nazwy"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nenhuma conta do Patreon conectada."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome"
           }
         }
       }
     },
-    "Notice" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通知"
+    "No connected Patreon account.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続されているPatreonアカウントはありません。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aviso"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie połączono konta Patreon."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhuma conta do Patreon conectada."
+          }
         }
       }
     },
-    "one or more apps" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1つ以上のアプリ"
+    "Notice": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "um ou mais apps"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aviso"
           }
         }
       }
     },
-    "Organization" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "組織"
+    "Organization": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "組織"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organizacja"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Organização"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organização"
           }
         }
       }
     },
-    "Other" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "その他"
+    "Other": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "その他"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Outro"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inne"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Outro"
+          }
         }
       }
     },
-    "Permission" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "権限"
+    "Permission": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "権限"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uprawnienie"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissão"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissão"
           }
         }
       }
     },
-    "Photo & Video" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "写真とビデオ"
+    "Photo & Video": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真とビデオ"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Foto e vídeo"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdjęcia i wideo"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto e vídeo"
+          }
         }
       }
     },
-    "Please deactivate a sideloaded app in order to install another one.\n\nIf you're running iOS 13.5 or later, make sure “Offload Unused Apps” is disabled in Settings > iTunes & App Stores, then install or delete all offloaded apps." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "別のアプリをインストールするには、サイドロードしたアプリを無効化してください。\n\niOS 13.5以降をご利用の場合は、設定 > iTunes & App Storeで「使用していないアプリをオフロード」が無効になっていることを確認し、オフロードされたアプリをすべてインストールまたは削除してください。"
+    "Please deactivate a sideloaded app in order to install another one.\n\nIf you're running iOS 13.5 or later, make sure “Offload Unused Apps” is disabled in Settings > iTunes & App Stores, then install or delete all offloaded apps.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別のアプリをインストールするには、サイドロードしたアプリを無効化してください。\n\niOS 13.5以降をご利用の場合は、設定 > iTunes & App Storeで「使用していないアプリをオフロード」が無効になっていることを確認し、オフロードされたアプリをすべてインストールまたは削除してください。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desative um aplicativo instalado via sideload para instalar outro.\n\nSe você estiver usando o iOS 13.5 ou posterior, certifique-se de que “Desinstalar apps não usados” esteja desativado em Ajustes > iTunes e App Stores. Em seguida, reinstale ou exclua todos os aplicativos desinstalados."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desative um aplicativo instalado via sideload para instalar outro.\n\nSe você estiver usando o iOS 13.5 ou posterior, certifique-se de que “Desinstalar apps não usados” esteja desativado em Ajustes > iTunes e App Stores. Em seguida, reinstale ou exclua todos os aplicativos desinstalados."
           }
         }
       }
     },
-    "Please deactivate a sideloaded app with AltStore in order to install another app.\n\nIf you're running iOS 13.5 or later, make sure 'Offload Unused Apps' is disabled in Settings > iTunes & App Stores, then install or delete all offloaded apps to prevent them from erroneously counting towards this limit." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "別のアプリをインストールするには、AltStoreでサイドロードしたアプリを無効化してください。\n\niOS 13.5以降をご利用の場合、設定 > iTunes & App Storeで「使用していないアプリをオフロード」が無効になっていることを確認し、オフロードされたアプリをすべてインストールまたは削除して、この制限に誤ってカウントされないようにしてください。"
+    "Please deactivate a sideloaded app with AltStore in order to install another app.\n\nIf you're running iOS 13.5 or later, make sure 'Offload Unused Apps' is disabled in Settings > iTunes & App Stores, then install or delete all offloaded apps to prevent them from erroneously counting towards this limit.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "別のアプリをインストールするには、AltStoreでサイドロードしたアプリを無効化してください。\n\niOS 13.5以降をご利用の場合、設定 > iTunes & App Storeで「使用していないアプリをオフロード」が無効になっていることを確認し、オフロードされたアプリをすべてインストールまたは削除して、この制限に誤ってカウントされないようにしてください。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desative um aplicativo instalado via sideload com o AltStore para instalar outro aplicativo.\n\nSe você estiver usando o iOS 13.5 ou posterior, certifique-se de que “Desinstalar apps não usados” esteja desativado em Ajustes > iTunes e App Stores. Em seguida, reinstale ou exclua todos os aplicativos desinstalados para evitar que sejam contabilizados incorretamente nesse limite."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desative um aplicativo instalado via sideload com o AltStore para instalar outro aplicativo.\n\nSe você estiver usando o iOS 13.5 ou posterior, certifique-se de que “Desinstalar apps não usados” esteja desativado em Ajustes > iTunes e App Stores. Em seguida, reinstale ou exclua todos os aplicativos desinstalados para evitar que sejam contabilizados incorretamente nesse limite."
           }
         }
       }
     },
-    "Please try again later." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "後ほどもう一度お試しください。"
+    "Please try again later.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "後ほどもう一度お試しください。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spróbuj ponownie później,"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tente novamente mais tarde."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tente novamente mais tarde."
           }
         }
       }
     },
-    "Please unlock the device with your passcode and try again." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パスコードでデバイスのロックを解除し、もう一度お試しください。"
+    "Please unlock the device with your passcode and try again.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パスコードでデバイスのロックを解除し、もう一度お試しください。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desbloqueie o dispositivo com sua senha e tente novamente."
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odblokuj urządzenie za pomocą kodu i spróbuj ponownie."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbloqueie o dispositivo com sua senha e tente novamente."
+          }
         }
       }
     },
-    "Privacy Permission" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プライバシー権限"
+    "Privacy Permission": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシー権限"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissão de privacidade"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissão de privacidade"
           }
         }
       }
     },
-    "Recovery Suggestion" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リカバリの提案"
+    "Recovery Suggestion": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リカバリの提案"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sugestão de recuperação"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugestão de recuperação"
           }
         }
       }
     },
-    "Refresh %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@の更新に失敗しました"
+    "Refresh %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の更新に失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Não foi possível atualizar %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível atualizar %@"
           }
         }
       }
     },
-    "Restore %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@の復元に失敗しました"
+    "Restore %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の復元に失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha ao restaurar %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha ao restaurar %@"
           }
         }
       }
     },
-    "Social" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソーシャル"
+    "Social": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソーシャル"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Społecznościowe"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Social"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Social"
           }
         }
       }
     },
-    "Source File" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソースファイル"
+    "Source File": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソースファイル"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Arquivo de código-fonte"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arquivo de código-fonte"
           }
         }
       }
     },
-    "Source Line" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソースライン"
+    "Source Line": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソースライン"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Linha de código-fonte"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linha de código-fonte"
           }
         }
       }
     },
-    "The app is in an invalid format." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アプリの形式が無効です。"
+    "The Developer disk located at %@ is incompatible with %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "The Developer disk located at %1$@ is incompatible with %2$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@にある開発者ディスクは%2$@と互換性がありません。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O app está em um formato inválido."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O disco de desenvolvedor localizado em %1$@ é incompatível com %2$@."
           }
         }
       }
     },
-    "The cached permissions for %@ do not match the source." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のキャッシュされた権限はソースと一致しません。"
+    "The Patreon API rate limit has been exceeded.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patreon APIのレート制限を超過しました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "As permissões em cache para %@ não correspondem à fonte."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O limite de taxa da API do Patreon foi excedido."
           }
         }
       }
     },
-    "The cached versions for %@ do not match the source." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のキャッシュされたバージョンはソースと一致しません。"
+    "The app is in an invalid format.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリの形式が無効です。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "As versões em cache de %@ não correspondem à fonte."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O app está em um formato inválido."
           }
         }
       }
     },
-    "The connection to AltServer was lost." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltServerとの接続が失われました。"
+    "The cached permissions for %@ do not match the source.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のキャッシュされた権限はソースと一致しません。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A conexão com o AltServer foi perdida."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As permissões em cache para %@ não correspondem à fonte."
           }
         }
       }
     },
-    "The Developer disk located at %@ is incompatible with %@." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The Developer disk located at %1$@ is incompatible with %2$@."
+    "The cached versions for %@ do not match the source.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のキャッシュされたバージョンはソースと一致しません。"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@にある開発者ディスクは%2$@と互換性がありません。"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As versões em cache de %@ não correspondem à fonte."
+          }
+        }
+      }
+    },
+    "The connection to AltServer was lost.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltServerとの接続が失われました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O disco de desenvolvedor localizado em %1$@ é incompatível com %2$@."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A conexão com o AltServer foi perdida."
           }
         }
       }
     },
-    "the device" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバイス"
+    "The device": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To urządzenie"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "o dispositivo"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O dispositivo"
           }
         }
       }
     },
-    "The device" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバイス"
+    "The disk is incompatible with %@.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ディスクは%@と互換性がありません。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O dispositivo"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O disco é incompatível com %@."
           }
         }
       }
     },
-    "The disk is incompatible with %@." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ディスクは%@と互換性がありません。"
+    "The provided anisette data is invalid.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提供されたAnisetteデータは無効です。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O disco é incompatível com %@."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os dados de anisete fornecidos são inválidos."
           }
         }
       }
     },
-    "The Patreon API rate limit has been exceeded." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patreon APIのレート制限を超過しました。"
+    "The requested app": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リクエストされたアプリ"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O limite de taxa da API do Patreon foi excedido."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O aplicativo solicitado"
           }
         }
       }
     },
-    "The provided anisette data is invalid." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提供されたAnisetteデータは無効です。"
+    "There was an error connecting to the device.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイスへの接続中にエラーが発生しました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Os dados de anisete fornecidos são inválidos."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um erro ao conectar ao dispositivo."
           }
         }
       }
     },
-    "The requested app" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リクエストされたアプリ"
+    "There was an issue communicating with the usbmuxd daemon.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "usbmuxdデーモンとの通信中に問題が発生しました。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O aplicativo solicitado"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocorreu um problema na comunicação com o daemon usbmuxd."
           }
         }
       }
     },
-    "There was an error connecting to the device." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバイスへの接続中にエラーが発生しました。"
+    "Title": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タイトル"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tytuł"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um erro ao conectar ao dispositivo."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Título"
           }
         }
       }
     },
-    "There was an issue communicating with the usbmuxd daemon." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "usbmuxdデーモンとの通信中に問題が発生しました。"
+    "Today": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dziś"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ocorreu um problema na comunicação com o daemon usbmuxd."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoje"
           }
         }
       }
     },
-    "this device's OS version" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このデバイスのOSバージョン"
+    "Undefined": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未定義"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "versão do sistema operacional deste dispositivo"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indefinido"
           }
         }
       }
     },
-    "Title" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "タイトル"
+    "Underlying Error": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下位エラー"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Título"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erro subjacente"
           }
         }
       }
     },
-    "Today" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今日"
+    "Underlying Errors": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下位エラー"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hoje"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erros subjacentes"
           }
         }
       }
     },
-    "Undefined" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未定義"
+    "Unknown": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不明"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieznany"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Indefinido"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desconhecido"
           }
         }
       }
     },
-    "Underlying Error" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下位エラー"
+    "Update %@ Failed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のアップデートに失敗しました"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erro subjacente"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uaktualnienie %@ nie powiodła się"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha na atualização de %@"
+          }
         }
       }
     },
-    "Underlying Errors" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "下位エラー"
+    "Utilities": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ユーティリティ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narzędzia"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erros subjacentes"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilitários"
           }
         }
       }
     },
-    "Unknown" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不明"
+    "Yesterday": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昨日"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desconhecido"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wczoraj"
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ontem"
+          }
         }
       }
     },
-    "Update %@ Failed" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@のアップデートに失敗しました"
+    "You cannot activate more than 3 apps with a non-developer Apple ID.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "非開発者用Apple IDでは、3つ以上のアプリをアクティベートできません。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie możesz aktywować więcej niż 3 aplikacji za pomocą zwykłego Apple ID."
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Falha na atualização de %@"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você não pode ativar mais de 3 apps com um Apple ID que não seja de desenvolvedor."
           }
         }
       }
     },
-    "Utilities" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ユーティリティ"
+    "Your device must be running iOS 12.2 or later to install AltStore.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AltStoreをインストールするには、お使いのデバイスがiOS 12.2以降を実行している必要があります。"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Utilitários"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do instalacji AltStore wymagany jest iOS 12.2 lub nowszy."
           }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu dispositivo precisa ter o iOS 12.2 ou posterior para instalar o AltStore."
+          }
         }
       }
     },
-    "Yesterday" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "昨日"
+    "one or more apps": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1つ以上のアプリ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jednej lub kilku aplikacji"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ontem"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "um ou mais apps"
           }
         }
       }
     },
-    "You cannot activate more than 3 apps with a non-developer Apple ID." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "非開発者用Apple IDでは、3つ以上のアプリをアクティベートできません。"
+    "the device": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Você não pode ativar mais de 3 apps com um Apple ID que não seja de desenvolvedor."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "o dispositivo"
           }
         }
       }
     },
-    "your device" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたのデバイス"
+    "this device's OS version": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスのOSバージョン"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "seu dispositivo"
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "versão do sistema operacional deste dispositivo"
           }
         }
       }
     },
-    "Your device must be running iOS 12.2 or later to install AltStore." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AltStoreをインストールするには、お使いのデバイスがiOS 12.2以降を実行している必要があります。"
+    "your device": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたのデバイス"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seu dispositivo precisa ter o iOS 12.2 ou posterior para instalar o AltStore."
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "seu dispositivo"
           }
         }
       }
     }
   },
-  "version" : "1.1"
+  "version": "1.1"
 }
