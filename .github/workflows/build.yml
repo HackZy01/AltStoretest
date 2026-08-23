@@ -8,9 +8,9 @@ name: Build Unsigned IPA
 
 on:
   push:
-    branches: [ main ]
+    branches: [ marketplace ]
   pull_request:
-    branches: [ main ]
+    branches: [ marketplace ]
   workflow_dispatch: {}
 
 env:
