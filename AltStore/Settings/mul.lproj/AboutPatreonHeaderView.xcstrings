@@ -1,175 +1,217 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "DTd-Yu-HXr.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Riley Testut\"; ObjectID = \"DTd-Yu-HXr\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Riley Testut"
+  "sourceLanguage": "en",
+  "strings": {
+    "DTd-Yu-HXr.text": {
+      "comment": "Class = \"UILabel\"; text = \"Riley Testut\"; ObjectID = \"DTd-Yu-HXr\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Riley Testut"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ライリー・テストゥ"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ライリー・テストゥ"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Riley Testut"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riley Testut"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riley Testut"
           }
         }
       }
     },
-    "FeG-e5-LJl.text" : {
-      "comment" : "Class = \"UITextView\"; text = \"Hey y'all!\\n\\nIf you'd like to support my work, you can donate here. In return, you'll gain access to beta versions of all of my apps and be among the first to try the latest features.\\n\\nThanks for all your support 💜\\nRiley\"; ObjectID = \"FeG-e5-LJl\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Hey y'all!\n\nIf you'd like to support my work, you can donate here. In return, you'll gain access to beta versions of all of my apps and be among the first to try the latest features.\n\nThanks for all your support 💜\nRiley"
+    "FeG-e5-LJl.text": {
+      "comment": "Class = \"UITextView\"; text = \"Hey y'all!\\n\\nIf you'd like to support my work, you can donate here. In return, you'll gain access to beta versions of all of my apps and be among the first to try the latest features.\\n\\nThanks for all your support 💜\\nRiley\"; ObjectID = \"FeG-e5-LJl\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Hey y'all!\n\nIf you'd like to support my work, you can donate here. In return, you'll gain access to beta versions of all of my apps and be among the first to try the latest features.\n\nThanks for all your support 💜\nRiley"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "皆さん、こんにちは！\n\n私の活動をサポートしたい方は、こちらから寄付していただけます。そのお礼として、私のアプリすべてのベータ版にアクセスでき、最新機能をいち早くお試しいただけます。\n\nいつも応援ありがとうございます💜\nライリー"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "皆さん、こんにちは！\n\n私の活動をサポートしたい方は、こちらから寄付していただけます。そのお礼として、私のアプリすべてのベータ版にアクセスでき、最新機能をいち早くお試しいただけます。\n\nいつも応援ありがとうございます💜\nライリー"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Olá, pessoal!\n\nSe vocês quiserem apoiar o meu trabalho, podem fazer uma doação aqui. Em troca, vocês terão acesso às versões beta de todos os meus apps e serão os primeiros a testar os recursos mais recentes.\n\nAgradeço todo o apoio 💜\nRiley"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cześć wszystkim!\n\nJeśli chcecie wesprzeć moją pracę, możecie przekazać darowiznę tutaj. W zamian otrzymacie dostęp do wersji beta wszystkich moich aplikacji i będziecie jednymi z pierwszych, którzy wypróbują najnowsze funkcje.\n\nDzięki za wasze wsparcie 💜\nRiley"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olá, pessoal!\n\nSe vocês quiserem apoiar o meu trabalho, podem fazer uma doação aqui. Em troca, vocês terão acesso às versões beta de todos os meus apps e serão os primeiros a testar os recursos mais recentes.\n\nAgradeço todo o apoio 💜\nRiley"
           }
         }
       },
-      "shouldTranslate" : false
+      "shouldTranslate": false
     },
-    "g2O-Ve-hrS.normalTitle" : {
-      "comment" : "Class = \"UIButton\"; normalTitle = \"Link Patreon account\"; ObjectID = \"g2O-Ve-hrS\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Link Patreon account"
+    "VOu-b8-uEL.text": {
+      "comment": "Class = \"UILabel\"; text = \"Operations\"; ObjectID = \"VOu-b8-uEL\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Operations"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Patreonアカウントをリンク"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オペレーション"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vincular conta do Patreon"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operacje"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operações"
           }
         }
       }
     },
-    "nPA-DN-RTG.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Developer\"; ObjectID = \"nPA-DN-RTG\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Developer"
+    "Zpb-k3-y7l.text": {
+      "comment": "Class = \"UILabel\"; text = \"Shane Gill\"; ObjectID = \"Zpb-k3-y7l\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Shane Gill"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "開発者"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "シェーン・ギル"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desenvolvedor"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shane Gill"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shane Gill"
           }
         }
       }
     },
-    "VOu-b8-uEL.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Operations\"; ObjectID = \"VOu-b8-uEL\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Operations"
+    "g2O-Ve-hrS.normalTitle": {
+      "comment": "Class = \"UIButton\"; normalTitle = \"Link Patreon account\"; ObjectID = \"g2O-Ve-hrS\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Link Patreon account"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "オペレーション"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patreonアカウントをリンク"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operações"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połącz konto Patreon"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincular conta do Patreon"
           }
         }
       }
     },
-    "yEi-L6-kQ8.normalTitle" : {
-      "comment" : "Class = \"UIButton\"; normalTitle = \"Become a patron\"; ObjectID = \"yEi-L6-kQ8\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Become a patron"
+    "nPA-DN-RTG.text": {
+      "comment": "Class = \"UILabel\"; text = \"Developer\"; ObjectID = \"nPA-DN-RTG\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Developer"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パトロンになる"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tornar-se um apoiador"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deweloper"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desenvolvedor"
           }
         }
       }
     },
-    "Zpb-k3-y7l.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Shane Gill\"; ObjectID = \"Zpb-k3-y7l\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Shane Gill"
+    "yEi-L6-kQ8.normalTitle": {
+      "comment": "Class = \"UIButton\"; normalTitle = \"Become a patron\"; ObjectID = \"yEi-L6-kQ8\";",
+      "extractionState": "extracted_with_value",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Become a patron"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "シェーン・ギル"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パトロンになる"
           }
         },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shane Gill"
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zostań patronem"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornar-se um apoiador"
           }
         }
       }
     }
   },
-  "version" : "1.1"
+  "version": "1.1"
 }
