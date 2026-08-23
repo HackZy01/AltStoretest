@@ -20,7 +20,7 @@ public enum AppSorting: String, CaseIterable
         {
         case .default: return NSLocalizedString("Default", bundle: Bundle(for: PatreonAPI.self), comment: "")
         case .name: return NSLocalizedString("Name", bundle: Bundle(for: PatreonAPI.self), comment: "")
-        case .developer: return NSLocalizedString("Developer", bundle: Bundle(for: PatreonAPI.self), comment: "")
+        case .developer: return NSLocalizedString("DeveloperSorting", bundle: Bundle(for: PatreonAPI.self), comment: "")
         case .lastUpdated: return NSLocalizedString("Last Updated", bundle: Bundle(for: PatreonAPI.self), comment: "")
         }
     }
