@@ -133,25 +133,40 @@ private extension ServerManager
         self.discoveredServers.append(server)
     }
     
-    func makeListener() -> NWListener
+    func makeListener() -> NWListener?
     {
-        let listener = try! NWListener(using: .tcp, on: NWEndpoint.Port(rawValue: ALTDeviceListeningSocket)!)
-        listener.newConnectionHandler = { [weak self] (connection) in
-            self?.incomingConnections?.append(connection)
-            self?.incomingConnectionsSemaphore?.signal()
-        }
-        listener.stateUpdateHandler = { (state) in
-            switch state
-            {
-            case .ready: break
-            case .waiting, .setup: print("Listener socket waiting...")
-            case .cancelled: print("Listener socket cancelled.")
-            case .failed(let error): print("Listener socket failed:", error)
-            @unknown default: break
-            }
+        guard let port = NWEndpoint.Port(rawValue: ALTDeviceListeningSocket) else {
+            Logger.main.error("Invalid wired-connection port \(ALTDeviceListeningSocket).")
+            return nil
         }
         
-        return listener
+        do
+        {
+            let listener = try NWListener(using: .tcp, on: port)
+            listener.newConnectionHandler = { [weak self] (connection) in
+                self?.incomingConnections?.append(connection)
+                self?.incomingConnectionsSemaphore?.signal()
+            }
+            listener.stateUpdateHandler = { (state) in
+                switch state
+                {
+                case .ready: break
+                case .waiting, .setup: print("Listener socket waiting...")
+                case .cancelled: print("Listener socket cancelled.")
+                case .failed(let error): print("Listener socket failed:", error)
+                @unknown default: break
+                }
+            }
+            
+            return listener
+        }
+        catch
+        {
+            // Creating this listener can throw in sandboxed/entitlement-restricted
+            // environments (e.g. LiveContainer). Skip wired discovery instead of crashing.
+            Logger.main.error("Failed to create wired-connection listener. Skipping wired discovery. \(error.localizedDescription, privacy: .public)")
+            return nil
+        }
     }
     
     func startListeningForWiredConnections()
@@ -159,7 +174,15 @@ private extension ServerManager
         self.incomingConnections = []
         self.incomingConnectionsSemaphore = DispatchSemaphore(value: 0)
         
-        self.connectionListener = self.makeListener()
+        guard let listener = self.makeListener() else {
+            // Could not create the listener — bail out of wired discovery.
+            // Everything else in the app continues to work normally.
+            self.incomingConnections = nil
+            self.incomingConnectionsSemaphore = nil
+            return
+        }
+        
+        self.connectionListener = listener
         self.connectionListener?.start(queue: self.dispatchQueue)
     }
     
