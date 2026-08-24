@@ -364,6 +364,13 @@ private extension FetchSourceOperation
 {
     func updateFediverseMetadata(@AsyncManaged for source: Source, completion: @escaping (Result<Void, Error>) -> Void)
     {
+        // --- LiveContainer test build: CloudKit isn't usable in this
+        // --- environment (missing real iCloud entitlements), and calling
+        // --- into it traps inside CloudKit itself rather than throwing a
+        // --- catchable Swift error. Skip Fediverse enrichment entirely
+        // --- instead of crashing on every source fetch.
+        return completion(.success(()))
+        
         let startTime = CFAbsoluteTimeGetCurrent()
         
         Task<Void, Never> {
